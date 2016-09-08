@@ -1,0 +1,57 @@
+
+<ion-navbar *navbar aaaa>
+  <ion-title>
+    Quizz
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+
+  <h4 style="color : white;text-align:center">Total Questions : {{totalQuestions}}</h4>
+  <div style="color : white; float:right;padding:3.5%">Time Left = {{min}} : {{count}}</div>
+  <br>
+ <h4 style="color:white;padding:3.5%">Questions:</h4>
+
+<ul>
+  <li *ngIf="totalQuestion" style="color:white;">
+    <h4>{{totalQuestion.questionsNo.getInput}}</h4>
+  </li>
+</ul> 
+
+
+
+   <div style="padding:2.5%">
+<ion-list radio-group *ngIf="totalQuestion" [(ngModel)]="Options">
+      <ion-item cccc>
+        <ion-label>{{totalQuestion.options.A}}</ion-label>
+        <ion-radio  [value]="totalQuestion.options.A"></ion-radio>
+      </ion-item>
+
+      <ion-item cccc>
+        <ion-label>{{totalQuestion.options.B}}</ion-label>
+        <ion-radio [value]="totalQuestion.options.B"></ion-radio>
+      </ion-item>
+
+      <ion-item cccc>
+        <ion-label>{{totalQuestion.options.C}}</ion-label>
+        <ion-radio [value]="totalQuestion.options.C"></ion-radio>
+      </ion-item>
+
+      <ion-item cccc>
+        <ion-label>{{totalQuestion.options.D}}</ion-label>
+        <ion-radio [value]="totalQuestion.options.D"></ion-radio>
+      </ion-item>
+    </ion-list> 
+   </div>
+
+  <div  style="position:relative;  padding:auto;margin:auto;text-align:center;top:7vh" >
+  <button (click)="next()" style="width:30vh;padding: 4vh; font-size:2.5vh" aaaa>Next </button>
+  </div>
+<br/><br/>
+    <div>
+     <!--{{totalQuestion[0]}}-->
+    </div>
+  
+  
+  
+</ion-content>

@@ -1,0 +1,31 @@
+
+<ion-navbar *navbar aaaa>
+  <ion-buttons end>
+        <button (click)="onProfile()">Profile<ion-icon name="contact"></ion-icon></button>
+  </ion-buttons>
+  <ion-title >
+   Quizz
+  
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+    <!--<img src="{{img}}" width="60" style="border-radius:50%;align:center" >
+    <h4 style="color : white; display: inline-block">{{name}}</h4>-->
+
+  <!--<div class="img"><img src="{{img}}" style="border-radius:50%; display:inline-block"></div>-->
+
+<div style="position:relative; top:32vh; padding:auto;margin:auto;text-align:center;">
+  <div>
+  <button (click)="createQuizz()" *ngIf="show" style="width: 30vh;margin-bottom:12px;padding: 4vh; font-size:2.5vh"  aaaa>Create Quizz</button>
+  </div>
+
+<div>
+  <button (click)="takeQuiz()"  style="width: 30vh;margin-bottom:12px;padding: 4vh; font-size:2.5vh"  aaaa>Take Quizz</button>
+
+</div>
+<div>
+  <button (click)="showResult()" *ngIf="show" style="width: 30vh;margin-bottom:12px;padding: 4vh; font-size:2.5vh"  aaaa>Show Result</button>
+  </div>
+ </div>
+</ion-content>

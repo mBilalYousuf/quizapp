@@ -1,0 +1,25 @@
+
+<ion-navbar *navbar aaaa>
+  <ion-title>
+    Result
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+ 
+<!--<h1 style="color:white; font-weight:bold; text-align:center;margin-top:10%">Result </h1>-->
+<div  style="padding:7.5%;height:30%" >
+  <div  style="background:white; color:black; font-weight:bold;padding:6.5%;  margin-top:5%; text-align:center" >
+   <!--<h3> Marks :  {{results}}</h3>-->
+   <h2>{{pass}}</h2>
+   <h2>{{fail}}</h2>
+   <h2>Your percentage is : {{percentages}} %</h2>
+</div>
+</div>
+   <br/>
+   <br/>
+   <br/>
+   <div style="position:relative;  padding:auto;margin:auto;text-align:center; top:7vh;margin-top:20%;">
+   <button (click)="goHome()" style="width:30vh;padding: 4vh; font-size:2.5vh" >Go to Home</button>
+   </div>
+</ion-content>

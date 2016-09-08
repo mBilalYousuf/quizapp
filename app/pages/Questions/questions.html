@@ -1,0 +1,79 @@
+
+<ion-navbar *navbar aaaa>
+  <ion-title style="color:white; font-weight:bold">
+    Add Questions
+  </ion-title>
+ 
+</ion-navbar>
+
+<ion-content style="background:#129793">
+  <div style="padding:2.5%">
+  <ion-list>
+    
+    <ion-item cccc>
+      
+      <ion-textarea type="text" [(ngModel)]="obj.getInput" placeholder="Enter Question"></ion-textarea>
+    </ion-item>
+    <!--<button (click)="sendingData(obj)">Add</button>-->
+  </ion-list>
+
+<h4 style="color:white; margin-top:2%; text-align:center"> Options</h4>
+  <ion-list>
+    
+    <ion-item  cccc>
+
+      <ion-input type="text" [(ngModel)]="objcts.A" placeholder="Option 1"></ion-input>
+    </ion-item>
+
+    
+    <ion-item cccc>
+
+      <ion-input type="text" [(ngModel)]="objcts.B" placeholder="Option 2"></ion-input>
+    </ion-item>
+
+   
+    <ion-item cccc>
+
+      <ion-input type="text" [(ngModel)]="objcts.C" placeholder="Option 3"></ion-input>
+    </ion-item>
+
+    
+    <ion-item cccc>
+
+      <ion-input type="text" [(ngModel)]="objcts.D" placeholder="Option 4"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item cccc>
+        <ion-label>Correct Answer</ion-label>
+        <ion-select [(ngModel)]="objcts.answer" checked="false" multiple="false" cancelText="Cancel" okText="Okay" aaaa>
+          <ion-option [value]="objcts.A">A</ion-option>
+          <ion-option [value]="objcts.B">B</ion-option>
+          <ion-option [value]="objcts.C">C</ion-option>
+          <ion-option [value]="objcts.D">D</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+<div style="position:relative;  padding:auto;margin:auto;text-align:center;top:7vh;">
+    <div>
+        <button (click)="sendingData(obj, objcts)" class="has-footer" style=" width: 30vh; margin-bottom:20px;padding: 4vh; font-size:2.5vh " aaaa> Submit</button>
+    </div>
+      <div>
+         <button (click)="finishPaper()" style="width: 30vh; margin-bottom:20px;padding: 4vh; font-size:2.5vh" aaaa>End Paper</button>
+      </div>
+</div>
+  </ion-list>
+         
+<!--<ion-spinner name="crescent"></ion-spinner>-->
+
+<!--<br/><br/><br/><br/><br/><br/>
+
+<ion-button style="float:left; text-align : center">
+ 
+    <button>
+      <ion-icon name="eye"></ion-icon>
+    </button>
+  </ion-button>-->
+  </div>
+      
+</ion-content>

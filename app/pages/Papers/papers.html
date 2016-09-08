@@ -1,0 +1,39 @@
+<ion-navbar *navbar aaaa>
+  <ion-title>
+    Select Paper
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+
+  <h4 style="color:white;text-align:center">Start Quiz by Selecting Paper</h4>
+
+
+
+
+  <!--<div>  {{papername}} </div>-->
+  <!--<ul>
+    <li *ngFor="let paper of papername">{{paper.paperName}}</li>
+  </ul>-->
+
+<ion-list style="margin-top: 7%;padding:2.5%"> 
+  <ion-item *ngFor="let paper of papername" (click)="selctpaper(paper)">
+    {{paper.paperName}}
+  </ion-item>
+</ion-list>
+    
+    <!--<ion-item *ngFor="let paper of papername">
+    
+    <ion-radio >{{paper.paperName}}</ion-radio>
+  </ion-item>-->
+
+<!--<ion-list radio-group *ngFor="let paper of papername">
+   
+      <ion-item>
+        <ion-label >{{paper.paperName}</ion-label>
+        <ion-radio checked="false" [value]="paper.paperName" ></ion-radio>
+      </ion-item>
+
+</ion-list>-->
+
+</ion-content>

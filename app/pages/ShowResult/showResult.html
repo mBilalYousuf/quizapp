@@ -1,0 +1,29 @@
+
+<ion-navbar *navbar aaaa>
+  <ion-title>
+     Student Test Results
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+
+<h2 style="text-align:center" whit>Students Test Results </h2>
+<h5 whit style="padding:2%">Note : Less than 60% is fail.</h5>
+   
+  <div style="padding:5%">
+
+   <ion-list *ngIf="studentResult"> 
+  <ion-item *ngFor="let result of studentResult" style="background:#f2f2f2;">
+ <ion-grid>
+          <ion-row width-33>
+            <ion-col> {{result.userName}} </ion-col>
+            <ion-col>{{result.userPaper}} </ion-col>
+            <ion-col>{{result.result}}%</ion-col>
+          </ion-row>
+        </ion-grid>
+  </ion-item>
+</ion-list>
+
+  </div>
+
+</ion-content>

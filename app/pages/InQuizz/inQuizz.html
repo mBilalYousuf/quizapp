@@ -1,0 +1,21 @@
+<ion-navbar *navbar aaaa>
+  <ion-title >
+    Create Paper
+  </ion-title>
+</ion-navbar>
+
+<ion-content style="background:#129793">
+    
+
+  <ion-list style="position:relative;  padding:auto;margin:auto;text-align:center;">
+      <div style="width: 70%; margin-bottom:18px; padding:auto;margin:auto;text-align:center;">
+
+        
+   <ion-input type="text" #newinputData style="background-color:#d9d9d9;margin-bottom:20px; font-weight:bold; top:28vh; padding: 1.5vh;font-size:2.5vh" placeholder="Paper Name" > </ion-input>
+      </div>
+
+      <div>    
+         <button (click)="bar(newinputData.value)" style=" width: 30vh; margin-bottom:20px; top:29vh;padding: 4vh; font-size:2.5vh" aaaa>Create Paper</button>
+      </div>
+  </ion-list>
+</ion-content>
